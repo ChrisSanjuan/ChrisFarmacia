@@ -1,0 +1,72 @@
+﻿<Window x:Class="Farmacia.UI.Ventas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Farmacia.UI"
+        mc:Ignorable="d"
+        Title="Ventas" Height="500" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <StackPanel Orientation="Horizontal">
+                <Label Width="130">Nombre del Empleado</Label>
+                <ComboBox Width="215" x:Name="cmbEmpleado"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="130">Nombre del Cliente</Label>
+                <ComboBox Width="215" x:Name="cmbCliente"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="130">Categoria</Label>
+                <ComboBox Width="215" x:Name="cmbCategoria"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Width="130">Productos</Label>
+                <ComboBox Width="215" x:Name="cmbProducto"></ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <Label Width="350"></Label>
+            </StackPanel>
+        </StackPanel>
+
+        <WrapPanel Grid.Column="1" Grid.Row="2">
+            <Button Width="100" x:Name="btnAgregarProducto">Agregar Producto</Button>
+        </WrapPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnRegistrarEmpleado" Width="150" Height="25" Click="btnRegistrarEmpleado_Click">Registrar Empleado</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnRegistrarCliente" Width="150" Height="25" Click="btnRegistrarCliente_Click">Registrar Cliente</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnRegistrarProducto" Width="150" Height="25" Click="btnRegistrarProducto_Click">Registrar Producto</Button>
+            </StackPanel>
+        </StackPanel>
+        
+        <DataGrid x:Name="dtgProductos" IsReadOnly="True" Grid.Column="1" Grid.Row="3"/>
+
+        <WrapPanel Grid.Row="2">
+            <Button Width="65" x:Name="btnNuevaVenta">Nuevo</Button>
+            <Button Width="65" x:Name="btnGuardarVenta">Guardar</Button>
+            <Button Width="65" x:Name="btnEditarVenta">Editar</Button>
+            <Button Width="65" x:Name="btnCancelarVenta">Cancelar</Button>
+            <Button Width="65" x:Name="btnEliminarVenta">Eliminar</Button>
+        </WrapPanel>
+    </Grid>
+</Window>

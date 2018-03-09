@@ -1,0 +1,5 @@
+C:\POO\Farmacia\Farmacia.COMMON\bin\Debug\Farmacia.COMMON.dll
+C:\POO\Farmacia\Farmacia.COMMON\bin\Debug\Farmacia.COMMON.pdb
+C:\POO\Farmacia\Farmacia.COMMON\obj\Debug\Farmacia.COMMON.csprojResolveAssemblyReference.cache
+C:\POO\Farmacia\Farmacia.COMMON\obj\Debug\Farmacia.COMMON.dll
+C:\POO\Farmacia\Farmacia.COMMON\obj\Debug\Farmacia.COMMON.pdb
